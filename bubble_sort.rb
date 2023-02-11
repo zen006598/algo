@@ -1,5 +1,3 @@
-require 'rails'
-
 def bubble_sort(array)
   length = array.count
   return array if length <= 1
