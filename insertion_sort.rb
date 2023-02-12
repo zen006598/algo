@@ -1,13 +1,13 @@
 def insertion_sort(array)
   (1...array.length).each do |i|
-    key = array[i]
-    j = i - 1
+    current_el = array[i]
+    previous_index = i - 1
 
-    while j >= 0 && array[j] > key
-      array[j + 1] = array[j]
-      j -= 1
+    while previous_index >= 0 && array[previous_index] > current_el
+      array[previous_index + 1] = array[previous_index]
+      previous_index -= 1
     end
-    array[j + 1] = key
+    array[previous_index + 1] = current_el
   end
   array
 end
