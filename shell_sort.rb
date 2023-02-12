@@ -1,6 +1,6 @@
 def shell_sort(array)
   length = array.length
-  gap = length / 2
+  gap = length / 2  
 
   #The gap value eventually becomes 1.
   while gap > 0
